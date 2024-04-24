@@ -6,20 +6,40 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
   var swiper2 = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween:10,
     pagination: {
       el: ".mySwiper2 .swiper-pagination",
       clickable: true,
     },
+    breakpoints:{
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024:{
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    }
   });
   var swiper3 = new Swiper(".mySwiper3", {
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 1,
     pagination: {
       el: ".mySwiper3 .swiper-pagination",
       clickable: true,
     },
+    breakpoints:{
+      768:{
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024:{
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+    }
   });
   function funcShow() {
     $('#hamb .first').toggleClass('menu__first');
